@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+}
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr .5fr;
+    grid-template-areas:
+      "phone phone learn_more learn_more"
+      "keybord tv tv icloud"
+      "game best_choice best_choice icloud"
+      "twiter puper tv_show tv_show";
+  }
+  
+.phone { 
+    background-color: #fff;
+    grid-area: phone;
+    display: flex;
+    padding-inline: 30px;
+    align-items: center;
+    color: #333;
+    justify-content: space-around;
+
+
+}
+.phone img{
+    width: 30%;
+    display: block;
+    align-self: flex-end;
+}
+.touch{
+    width: 30%;
+}
+.phone h3 {
+    margin-block:10px 20px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+
+}
+.phone p{
+    color: #9fa3a7;
+}
+  
+ .learn_more { 
+    background-color: #f7f8f9;
+    padding-block: 50px;
+    grid-area: learn_more; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+ .learn_more  p{
+    color: #9fa3a7;
+
+}
+.learn_more h1 {
+    margin-block: 20px 10px;
+    color: #333;
+    width: 500px;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+   }
+a {
+    color: #27b9c2;
+   }
+.keybord { 
+    background-color: #f05638;
+    grid-area: keybord; 
+    display: flex;
+    flex-direction: column;
+    color: #fffbfb;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.keybord img {
+    width: 60%;
+}
+.keybord h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    max-width: 230px;
+}
+.keybord  a {
+    text-decoration: none;
+    color: #ffc80a;
+    margin-top: 20px;
+    font-size: 12px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+.tv {
+    display: flex;
+    grid-area: tv; 
+    padding: 70px 0 0 26px;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.tv  .photo img{
+    width: 50%;
+    margin-top: 10px;
+    box-shadow: -2px 2px 20px 0px black;
+}
+.tv .photo {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.tv .photo h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    max-width: 150px;
+} 
+.tv .photo p {
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+} 
+
+.tv .text {
+    width: 40%;
+}
+
+.tv .text  p {
+    color: #9fa3a7;
+    line-height: 26px;
+}
+.tv .text a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+}
+
+ .icloud {
+   background-color: #8f76bc;
+     grid-area: icloud;
+     display: flex;
+     flex-direction: column;
+     padding: 30px 10px 70px;
+     color: #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.icloud .pro {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 350px;
+        background: #8166b0;
+        border-radius: 50%;
+    
+
+}
+.icloud div.pro img{
+    width: 200px;
+    height: 200pc;
+    object-fit: scale-down;
+    position: relative;
+    left: 68px;
+    filter: drop-shadow(2px 4px 10px black);
+    margin-top: 20px;
+
+}
+
+.icloud div.pro div{
+    padding: 2px 13px 1px 30px;
+    border-radius: 60px;
+    background-color: hsla(0, 0%, 100%, .08);
+    background-image: url(../image/ashara.png) ;
+    width: fit-content;
+    margin-inline: auto;
+    background-position: 11px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    line-height: 23px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    margin-top: 20px;
+}
+.icloud div.pro  p {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+.icloud .clud h2{
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+.icloud .clud p {
+    max-width: 290px;
+    margin-block: 40px;
+    line-height: 30px;
+ }
+ .icloud .clud a{
+     margin-top: 30px;
+     padding: 14px 28px;
+     border-radius: 50px;
+     background-color: #ffc80a;
+     color: #000;
+     font-size: 12px;
+     font-weight: 700;
+     letter-spacing: 2.4px;
+     text-transform: uppercase;
+     text-decoration: none;
+ } 
+
+  .game {
+     grid-area: game;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #f7f8f9;
+     padding-block: 50px;
+     }
+     .game img {
+        width: 100%;
+        width: 75%;
+        position: relative;
+        left: -25px;
+        
+     }
+     .game h3 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 400;
+    
+     }
+     .game a {
+
+         margin-top: 20px;
+         font-size: 12px;
+         font-weight: 700;
+         letter-spacing: 2.4px;
+         text-decoration: none;
+         text-transform: uppercase;
+
+     }
+
+  .best_choice {
+    display: flex;
+     grid-area: best_choice; 
+     background-image: url(../image/uxback.png);
+     flex-direction: column;
+     text-align: center;
+     background-color: #93b6b7;
+     background-position: 50% 100%;
+     background-size: 80%;
+     background-repeat: no-repeat;
+     text-align: center;
+    color: #fff;  
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+    .best_choice img {
+        width: 60%;
+        display: block;
+ 
+    }
+    .best_choice h3 {
+        margin: auto;
+        padding-top: 31px;
+        padding-bottom: 31px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 400;
+        max-width: 200px;
+    }
+    .best_choice  div {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: #fa684f;
+        font-size: 8px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+
+    }
+.twiter {
+background-color: #38d5f4;
+ grid-area: twiter;
+ display: flex;
+flex-direction: column; 
+justify-content: center;
+align-items: center;
+padding-inline: 30px;
+}
+ .twiter img {
+    width: 20%;
+    display: block;
+ }
+ .twiter h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+ }
+  .puper {
+    padding-block: 30px;
+    background-color: #f7f8f9;  
+    display: flex;
+    grid-area: puper; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.puper div {
+    background-color: #7bc424;
+    color: #fff;
+    top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.puper h3 {
+max-width: 200px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+
+  .tv_show {
+    background-color: #2c2c2c;
+     grid-area: tv_show; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-inline: 50px;
+    }
+    .tv_show img {
+        width: 30%;
+        position: relative;
+        right: 20%;
+        align-self: center;
+ }
+    .tv_show h3 { 
+        color: #fff;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 400;
+        max-width: 200px;
+}
+
+@media screen and (max-width:991px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+
+        " learn_more learn_more"
+        " phone phone "
+        "keybord  game "
+        "tv tv "
+        "twiter  icloud"
+        "best_choice icloud"
+        "puper puper"
+        " tv_show tv_show";
+    }
+    .learn_more {
+    }
+    
+}
+  
